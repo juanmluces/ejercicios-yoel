@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <title>Ejercicio Yoel</title>
+</head>
+<body>
+  <!-- Recuerda que desde javascript puedes atacar elementos del dom con document.getElementById('nombreDeId') -->
+  <header>
+    <h1>Ejercicio de manipulación del DOM desde javacript</h1>
+  </header>
+  <hr>
+  <section id="seccion1" class="ejercicio ejercicio-1">
+    <!-- Debes utilizar el evento onclick del boton para ejecutar una funcion  -->
+    <!-- la función debe cambiar la propiedad style.backgroundColor del elemento seleccionado -->
+    <button id="btnSeccionUno" onclick="cambiarFondoSec1()" >Cambia el color de fondo!</button>
+  </section>
+  <section id="seccion2" class="ejercicio ejercicio-2">
+    <!-- aqui tienes que utilizar la propiedad css position: relative en la clase container y la poriedad position: abosolute en la clase box. luego podrás manipular la calse box con las popiedades top, bottom, left y right, todas estas son propiedades de css -->
+    <div class="botones">
+      <!-- Las funciones deben sobreescribir estas proriedades, para eliminar las propiedades puedes asignarles el valor de 'unset' -->
+      <button onclick="moverBoxArribaIzq()">arriba izquierda</button>
+      <button onclick="moverBoxArribaDch()">arriba derecha</button>
+      <button onclick="moverBoxAbajoIzq()">abajo izquierda</button>
+      <button onclick="moverBoxAbajoDch()">abajo derecha</button>
+    </div>
+    <div class="container">
+      <div id="box" class="box"></div>
+    </div>
+  </section>
+  <section id="seccion3" class="ejercicio ejercicio-3">
+    <!-- el evento que debes utilizar es el oninput del input de html, luego puedes recuperar la propiedad value del elemento input ejemplo: const seccion3Input = document.getElementById('seccion3Input'); seccion3Input.value-->
+    <h2 id="seccion3H2"> Esto va a ser dificil</h2>
+    <input id="seccion3Input" oninput="changeH2()" type="text" id="input">
+  </section>
+
+  <!-- para mas pistas puedes verte este video: https://youtu.be/dQw4w9WgXcQ -->
+
+  <script src="./script.js"></script>
+</body>
+</html>

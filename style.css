@@ -1,0 +1,85 @@
+body{
+  background-color: whitesmoke;
+  color: darkslategray;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header{
+  text-align: center;
+}
+
+section.ejercicio{
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.ejercicio-1{
+  min-height: calc(100vh - 120px);
+  background-color: darkslategray;
+}
+
+.ejercicio-1 button{
+  font-size: 3rem;
+  cursor: pointer;
+  padding: 1em 2em;
+  border-radius: 5px;
+  background-color: lightslategray;
+  transition: ease-out 150ms;
+  -webkit-box-shadow: 0px 4px 5px 2px rgba(0,0,0,0.7); 
+box-shadow: 0px 4px 5px 2px rgba(0,0,0,0.7);
+}
+
+.ejercicio-1 button:hover{
+  color: white;
+  background-color: darkslategrey;
+  background-color: darkred;
+}
+
+.ejercicio-1 button:active{
+  transform: translateY(5px);
+  -webkit-box-shadow: 0px 1px 1px 0px rgba(47, 79, 79,0.7); 
+box-shadow: 0px 1px 1px 0px rgba(47, 79, 79,0.7);
+}
+
+.ejercicio-2{
+  background-color: darkkhaki;
+  flex-direction: column;
+}
+
+.ejercicio-2 .botones{
+  margin-bottom: 2em;
+
+}
+
+.ejercicio-2 .container {
+  width: 250px;
+  height: 250px;
+  border: 1px solid black;
+  position: relative;
+  background-color: #ffff;
+}
+
+.ejercicio-2 .box{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  background-color: darkred;
+  transition: ease-in-out 300ms;
+}
+
+
+.ejercicio-3{
+  background-color: darkslateblue;
+  flex-direction: column;
+  font-size: 2rem;
+  color: #ffff;
+}
+
+.ejercicio-3 input{
+  font-size: 3rem;
+}
